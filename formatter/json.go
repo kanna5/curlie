@@ -19,7 +19,7 @@ type JSON struct {
 	buf       []byte
 }
 
-var indent = []byte(`    `)
+var indent = []byte(`  `)
 
 func (j *JSON) Write(p []byte) (n int, err error) {
 	if !j.inited && len(p) > 0 {
